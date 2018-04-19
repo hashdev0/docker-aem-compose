@@ -4,12 +4,12 @@ services:
   aem6.3-publisher:
     image: cheproximity/aem-publisher:aem-6.3
     ports:
-      - "4505:4503"
+      - "4503:4503"
   aem6.3-author:
     image: cheproximity/aem-author:aem-6.3
     ports:
-      - "4504:4502"
-  dispatcher:
+      - "4502:4502"
+  dispatcher-local:
     image: cheproximity/aem-dispatcher:apache2.4.18
     ports: 
       - "8080:80"
